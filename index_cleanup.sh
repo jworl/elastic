@@ -114,7 +114,7 @@ if [[ ${RESUME} -eq 1 ]]; then
     _DELETE "${i}"
     _PENDING
   done
+  MSG="Cluster maintenance completed successfully"
+  _LOG "INFO" "${MSG}" && _NOTIFY "${MSG}"
 fi
 
-MSG="Cluster maintenance completed successfully"
-_LOG "INFO" "${MSG}" && _NOTIFY "${MSG}"
